@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
+	<link rel="stylesheet" href="./styles/style.css" />
+	<link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.css" />	
+
 </head>
+
 <body>
 <div class="mask"></div>
     <article id="data-source">
@@ -104,12 +108,35 @@
         <div class="swiper-slide region">Slide 2</div>
         <div class="swiper-slide region">Slide 3</div>
 	</div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
     <!-- 如果需要导航按钮 -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-	<div class="swiper-pagination"></div>
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
 </div>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../node_modules/swiper/dist/js/swiper.js"></script>	
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: false,
+    
 
+    
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
+    
+
+
+  })        
+  </script>
+  <script type="text/javascript" src="./lib/css-regions-polyfill.js"></script>	
+  
 </body>
 
 </html>
