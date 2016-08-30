@@ -1,2 +1,2 @@
-import './styles/style.css';
-require('./lib/css-regions-polyfill.js')
+require('./styles/style.css');
+require('./lib/css-regions-polyfill.js');
