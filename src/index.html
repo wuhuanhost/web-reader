@@ -3,70 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-    @media only print {
-        body * {
-            display: none !important;
-        }
-        body:after {
-            content: "Don't waste paper!";
-        }
-    }
-    
-    #data-source {
-        flow-into: articles;
-    }
-    
-    #region-1,
-    #region-2,
-    #region-3 {
-        border: 1px solid #999999;
-        line-height: 20px;
-        font-size: 14px;
-        text-align: justify;
-        padding: 0;
-    }
-    
-    #region-1 {
-        padding: 0;
-        height: 300px;
-        width: 600px;
-    }
-    
-    #region-2 {
-        padding: 0;
-        height: 300px;
-        width: 600px;
-    }
-    
-    #region-3 {
-        padding: 0;
-        height: 900px;
-        width: 360px;
-        margin-left: 660px;
-        margin-top: -700px;
-    }
-    
-    .region {
-        flow-from: articles;
-    /*    region-fragment: break;*/
-    }
-    
-    article {
-        padding: 10px;
-    }
-    
-    p {
-        -webkit-margin-before: 0em;
-        -webkit-margin-after: 0em;
-        text-indent: 2em;
-    }
-    </style>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body>
-    <article id="data-source" style="display:none;">
+    <article id="data-source" style="margin-top:-10000px;">
         <h1>我是标题一</h1>
         <p>汉语属于汉藏语系分析语，有声调。汉字起源于图画。在汉字产生的早期阶段，象形字的字形跟它所代表的语素的意义直接发生联系。虽然每个字也都有自己固定的读音，但是字形本身不是表音的符号，跟拼音文字的字母的性质不同。象形字的读音是它所代表的语素转嫁给它的。随着字形的演变，象形字变得越来越不象形。结果是字形跟它所代表的语素在意义上也失去了原有的联系。这个时候，字形本身既不表音，也不表义，变成了抽象的记号。如果汉语里所有的语素都是由这种既不表音也不表义的记号代表的，那么汉字可以说是一种纯记号文字。不过事实并非如此。汉字有独体字与合体字的区别。只有独体字才是纯粹的记号文字。合体字是由独体字组合造成的。从构造上说，合体字比独体字高一个层次。因为组成合体字的独体字本身虽然也是记号，可是当它作为合体字的组成成分时，它是以有音有义的“字”的身份参加的。合体字。</p>
         <img src="" alt="" width="100px" height="100px" style="margin:0 auto;display:block">

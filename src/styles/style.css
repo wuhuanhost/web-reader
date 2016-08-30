@@ -1,0 +1,48 @@
+ #data-source {
+        flow-into: articles;
+    }
+    
+    #region-1,
+    #region-2,
+    #region-3 {
+        border: 1px solid #999999;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: justify;
+        padding: 0;
+    }
+    
+    #region-1 {
+        padding: 0;
+        height: 300px;
+        width: 600px;
+    }
+    
+    #region-2 {
+        padding: 0;
+        height: 300px;
+        width: 600px;
+    }
+    
+    #region-3 {
+        padding: 0;
+        height: 900px;
+        width: 360px;
+        margin-left: 660px;
+        margin-top: -700px;
+    }
+    
+    .region {
+        flow-from: articles;
+    /*    region-fragment: break;*/
+    }
+    
+    article {
+        padding: 10px;
+    }
+    
+    p {
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        text-indent: 2em;
+    }
