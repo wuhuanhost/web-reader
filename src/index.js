@@ -1,0 +1,1 @@
+require('./lib/css-regions-polyfill.js')
