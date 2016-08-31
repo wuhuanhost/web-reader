@@ -18,7 +18,7 @@ module.exports = {
         reasons: false
     },
     // 生成sourcemap
-    devtool: ['sourcemap'],
+    //devtool: ['sourcemap'],
     //文件路径的指向
     resolve: {
         extensions: ['', '.js', 'jsx'],
@@ -39,7 +39,7 @@ module.exports = {
                 // loader:'style!css!less'
             }, {
                 test: /\.css$/,
-                // loader: "style!css!less"
+                // loader: "style!css"
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader")
             }, {//加载json
                 test: /\.json$/, loader: "json"

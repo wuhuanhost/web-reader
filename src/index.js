@@ -1,5 +1,6 @@
 require('./styles/style.css');
-import 'swiper';
+import 'styles/print.css';
+import 'swiper/dist/js/swiper.js';
 import 'swiper/dist/css/swiper.css';
 
 var mySwiper = new Swiper ('.swiper-container', {
@@ -10,6 +11,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     prevButton: '.swiper-button-prev',
 	pagination : '.swiper-pagination',
 	paginationType : 'fraction'
+	
 })
 		
 require('./lib/css-regions-polyfill.js');
