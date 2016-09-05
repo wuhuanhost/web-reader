@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    body .container .page {
+        width: 100%;
+        height: 100%;
+    }
+    @page {
+        background-color: green;
+    }
+}
+
+
+/*正文*/
+
+#data-source-text {
+    flow-into: articles;
+}
+
+.region-text {
+    flow-from: articles;
+}
+
+
+/*章*/
+
+.chapter {
+    font-family: 'hkcuheiti';
+    font-size: 16px;
+    /*trackingRight:'-4%'
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+}
+
+
+/*章名*/
+
+.chapter-name {
+    font-family: 'hkfangsong';
+    font-size: 23px;
+    /*//trackingRight:'2%'
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+}
+
+
+/*节标题*/
+
+.title {
+    font-family: 'hkcuyuanti';
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    /*trackingRight:'-4%'
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+}
+
+
+/*正文*/
+
+.text {
+    text-indent: 2em;
+    font-family: 'hkzhongming';
+    font-size: 11.5px;
+    line-height: 19.25px;
+    text-align: "justify";
+    letter-spacing: -0.04em;
+    /*textJustify:"distribute"   //interWord 或者 distribute
+justificationRule:"space"  //eastAsian 或者 space
+//justificationStyle:"prioritizeLeastAdjustment"
+textIndent:11.5*2pt
+trackingRight:'-4%'
+kerning:"on"
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+}
+
+.page {
+    margin: 0 auto;
+    border: 1px solid #999999;
+    /*margin-top: 200px;*/
+}
+
+.page-left {
+    box-sizing: border-box;
+    float: left;
+}
+
+.page-center {
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+    float: left;
+}
+
+.page-center-top {
+    border-bottom: 1px solid #999999;
+    /*border: 1px solid #121212;*/
+    box-sizing: border-box;
+}
+
+.page-center-text {
+    text-align: justify;
+    /*border: 1px solid mediumvioletred;*/
+    box-sizing: border-box;
+}
+
+.page-center-bottom {
+    /*border: 1px solid #654321;*/
+    box-sizing: border-box;
+}
+
+.page-right {
+    /*border: 1px solid pink;*/
+    box-sizing: border-box;
+    float: left;
+}
+
+.page-right:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.top-title-even {
+    position: relative;
+    display: block;
+    font-size: 10px;
+    bottom: -46px;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    text-align: right;
+}
+
+.top-title-odd {
+    position: relative;
+    display: block;
+    font-size: 10px;
+    bottom: -46px;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    text-align: left;
+}

@@ -1,0 +1,40 @@
+@font-face {
+	font-family:"DFKai-SB";
+	src:url('./fonts/DFKai-SB.ttf');
+}
+@font-face {
+	font-family:"biaokaiti";
+	src:url('./fonts/biaokaiti.ttf');
+}
+@font-face {
+	font-family:"hkfangsong";
+	src:url('./fonts/hkfangsong.TTC');
+}
+@font-face {
+	font-family:"hkbiaokaiti";
+	src:url('./fonts/hkbiaokaiti.TTF');
+}
+@font-face {
+	font-family:"hkcuheiti";
+	src:url('./fonts/hkcuheiti.TTF');
+}
+@font-face {
+	font-family:"hkcuyuanti";
+	src:url('./fonts/hkcuyuanti.TTC');
+}
+@font-face {
+	font-family:"hkcuyuanti";
+	src:url('./fonts/hkcuyuanti.TTF');
+}
+@font-face {
+	font-family:"hkfangsong";
+	src:url('./fonts/hkfangsong.TTF');
+}
+@font-face {
+	font-family:"hkxinteming";
+	src:url('./fonts/hkxinteming.TTC');
+}
+@font-face {
+	font-family:"hkzhongming";
+	src:url('./fonts/hkzhongming.TTF');
+}

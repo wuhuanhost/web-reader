@@ -1,90 +1,118 @@
  #data-source {
-        flow-into: articles;
-    }
-    
-    #region-1,
-    #region-2,
-    #region-3 {
-		position:absolute;
-        border: 1px solid #999999;
-        line-height: 20px;
-        font-size: 14px;
-        text-align: justify;
-        padding: 0;
-		z-index:1001;
-    }
-    
-    #region-1 {
-		top:20px;
-        padding: 0;
-        height: 300px;
-        width: 600px;
-    }
-    
-    #region-2 {
-		top:400px;
-        padding: 0;
-        height: 300px;
-        width: 600px;
-    }
-    
-    #region-3 {
-		top:20px;
-        padding: 0;
-        height: 900px;
-        width: 360px;
-        margin-left: 660px;
-    }
-    
-    .region {
-        flow-from: articles;
-    /*    region-fragment: break;*/
-    }
-    
-    article {
-        padding: 10px;
-    }
-    
-    p {
-        -webkit-margin-before: 0em;
-        -webkit-margin-after: 0em;
-        text-indent: 2em;
-    }
-
-	html, body {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		overflow:hidden;
-		font-family:'宋体'
-	}
-	.mask{
-		width:100%;
-		height:100%;
-		background-color:#FFFFFF;
-		z-index:100;
-		display:block;
-	} 
-
-	.swiper-container {
-		position:absolute;
-		top:20px;
-		width: 400px;
-		height: 600px;
-		border:1px solid #999999;
-		padding:10px;
-		text-align:justify;
-		left:50%;
-		margin-left:-200px;
-		z-index:200;
-}  
-
-	p{
-		line-height:30px;
-
-	}
-
-	.swiper-pagination{
-		color:red;
-	}
+ 	flow-into: articles;
+ }
+ 
+ .region {
+ 	flow-from: articles;
+ 	/*    region-fragment: break;*/
+ }
+ 
+ p {
+ 	-webkit-margin-before: 0em;
+ 	-webkit-margin-after: 0em;
+ }
+ 
+ html,
+ body {
+ 	width: 100%;
+ 	height: 100%;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	font-family: '宋体'
+ }
+ 
+ .mask {
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: #FFFFFF;
+ 	z-index: 100;
+ 	display: block;
+ }
+ 
+ .swiper-container {
+ 	position: absolute;
+ 	top: 20px;
+ 	width: 510.228px;
+ 	height: 651.958px;
+ 	border: 1px solid #999999;
+ 	padding: 0;
+ 	text-align: justify;
+ 	left: 50%;
+ 	margin-left: -200px;
+ 	z-index: 200;
+ 	
+ }
+ /*书本页面*/
+ 
+ .swiper-container .content {
+ 	box-sizing: border-box;
+ 	padding: 0 51.003px 0 85.038px;
+ 	margin: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	/*background-color: red;*/
+ }
+ 
+ p {
+ 	line-height: 30px;
+ }
+ 
+ .swiper-pagination {
+ 	color: red;
+ }
+ 
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+ /*章*/
+ 
+ .chapter {
+ 	font-family: 'DFPHeiBold-B5';
+ 	font-size: 16pt;
+ 	/*trackingRight:'-4%'
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+ }
+ /*章名*/
+ 
+ .chapter-name {
+ 	font-family: 'DFPFangSongW4-B5';
+ 	font-size: 23pt;
+ 	/*//trackingRight:'2%'
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+ }
+ /*节标题*/
+ 
+ .title {
+ 	font-family: 'DFPYuanBold-B5';
+ 	font-size: 16pt;
+ 	margin-top: 16pt;
+ 	margin-bottom: 16pt;
+ 	/*trackingRight:'-4%'
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+ }
+ /*正文*/
+ 
+ .text {
+ 	text-indent: 2em;
+ 	font-family: 'DFPMingMedium-B5';
+ 	font-size: 11.5pt;
+ 	line-height: 19.25pt;
+ 	text-align: "justify";
+ 	/*textJustify:"distribute"   //interWord 或者 distribute
+justificationRule:"space"  //eastAsian 或者 space
+//justificationStyle:"prioritizeLeastAdjustment"
+textIndent:11.5*2pt
+trackingRight:'-4%'
+kerning:"on"
+fontLookup:'embeddedCFF'
+renderingMode:'cff'
+cffHinting:'horizontalStem'*/
+ }
