@@ -1,14 +1,15 @@
-var webpack = require("webpack");
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path=require('path');
 
 module.exports = {
-    entry: {//入口文件
-        app: __dirname + '/src/index.js',
+    entry: {
+        app: path.resolve(__dirname,'src/index.js'),
         vendors: ['jquery']
     },
     output: {//输出文件
-        path: __dirname + '/dist',
+        path:'',
         publicPath: '',
         filename: 'assets/app.bundle.js',
         chunkFilename: "assets/app.bundle.js"
@@ -56,7 +57,7 @@ module.exports = {
         
         new ExtractTextPlugin("assets/[name].css"),
 
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'assets/vendor.js'),
+		new webpack.optimize.CommonsChunkPlugin('vendors', 'assets/vendor.js'),
 
         new webpack.optimize.UglifyJsPlugin({
             compress: {

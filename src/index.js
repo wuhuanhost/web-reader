@@ -3,6 +3,10 @@ import 'styles/print.css';
 import Swiper from 'swiper/dist/js/swiper.js';
 import 'swiper/dist/css/swiper.css';
 
+if(module.hot)
+    module.hot.accept();
+
+    
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: false,
@@ -12,14 +16,6 @@ var mySwiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
     paginationType: 'fraction'
 });
-
-
-
-
-
-
-
-
 
 
 require('./lib/css-regions-polyfill.js');
