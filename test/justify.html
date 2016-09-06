@@ -5,32 +5,71 @@
     <meta charset="UTF-8">
     <title>justify测试</title>
     <style>
+        .box {
+            width: 600px;
+            height: auto;
+            font-size: 16px;
+            background-color: lightskyblue;
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        span {
+            height: 36px;
+        }
+        
         .test-justify {
             width: 600px;
             height: 800px;
-        
+            font-size: 14px;
             background-color: pink;
-          
+            text-justify: inter-ideograph;
+            text-align: justify;
         }
-
-        .test-justify p{
-               text-indent: 2em;    text-align: justify;
+        
+        .test-justify p {
+            text-indent: 2em;
         }
     </style>
 </head>
 
 <body>
+    <h3>whtmktopdf文本对齐不能实现</h3>
+    <div class="box">
+        <span>该</span><span>属</span><span>性</span><span>通</span><span>过</span><span>指</span><span>定</span><span>行</span><span>框</span><span>与</span><span>哪</span><span>个</span><span>点</span><span>对</span><span>齐</span><span>，</span><span>从</span><span>而</span><span>设</span><span>置</span><span>块</span><span>级</span><span>元</span><span>素</span><span>内</span><span>文</span><span>本</span><span>的</span><span>水</span><span>平</span><span>对</span><span>齐</span><span>方</span><span>式</span><span>。</span><span>通</span><span>过</span><span>允</span><span>许</span><span>用</span><span>户</span><span>代</span><span>理</span><span>调</span><span>整</span><span>行</span><span>内</span><span>容</span><span>中</span><span>字</span><span>母</span><span>和</span><span>字</span><span>之</span><span>间</span><span>的</span><span>间</span><span>隔</span><span>，</span><span>可</span><span>以</span><span>支</span><span>持</span><span>值</span><span> </span><span>不</span><span>同</span><span>用</span><span>户</span><span>代</span><span>理</span><span>可</span><span>能</span><span>会</span><span>得</span><span>到</span><span>不</span><span>同</span><span>的</span><span>结</span><span>果</span><span>。</span><span>该</span><span>属</span><span>性</span><span>通</span><span>过</span><span>指</span><span>定</span><span>行</span><span>框</span><span>与</span><span>哪</span><span>个</span><span>点</span><span>对</span><span>齐</span><span>，</span><span>从</span><span>而</span><span>设</span><span>置</span><span>块</span><span>级</span><span>元</span><span>素</span><span>内</span><span>文</span><span>本</span><span>的</span><span>水</span><span>平</span><span>对</span><span>齐</span><span>方</span><span>式</span><span>。</span><span>通</span><span>过</span><span>允</span><span>许</span><span>用</span><span>户</span><span>代</span><span>理</span><span>调</span><span>整</span><span>行</span><span>内</span><span>容</span><span>中</span><span>字</span><span>母</span><span>和</span><span>字</span><span>之</span><span>间</span><span>的</span><span>间</span><span>隔</span><span>，</span><span>可</span><span>以</span><span>支</span><span>持</span><span>值</span><span> </span><span>不</span><span>同</span><span>用</span><span>户</span><span>代</span><span>理</span><span>可</span><span>能</span><span>会</span><span>得</span><span>到</span><span>不</span><span>同</span><span>的</span><span>结</span><span>果</span><span>。</span><span>该</span><span>属</span><span>性</span><span>通</span><span>过</span><span>指</span><span>定</span><span>行</span><span>框</span><span>与</span><span>哪</span><span>个</span><span>点</span><span>对</span><span>齐</span><span>，</span><span>从</span><span>而</span><span>设</span><span>置</span><span>块</span><span>级</span><span>元</span><span>素</span><span>内</span><span>文</span><span>本</span><span>的</span><span>水</span><span>平</span><span>对</span><span>齐</span><span>方</span><span>式</span><span>。</span><span>通</span><span>过</span><span>允</span><span>许</span><span>用</span><span>户</span><span>代</span><span>理</span><span>调</span><span>整</span><span>行</span><span>内</span><span>容</span><span>中</span><span>字</span><span>母</span><span>和</span><span>字</span><span>之</span><span>间</span><span>的</span><span>间</span><span>隔</span><span>，</span><span>可</span><span>以</span><span>支</span><span>持</span><span>值</span><span>不</span><span>同</span><span>用</span><span>户</span><span>代</span><span>理</span><span>可</span><span>能</span><span>会</span><span>得</span><span>到</span><span>不</span><span>同</span><span>的</span><span>结</span><span>果</span><span>。</span><span>该</span><span>属</span><span>性</span><span>通</span><span>过</span><span>指</span><span>定</span><span>行</span><span>框</span><span>与</span><span>哪</span><span>个</span><span>点</span><span>对</span><span>齐</span><span>，</span><span>从</span><span>而</span><span>设</span><span>置</span><span>块</span><span>级</span><span>元</span><span>素</span><span>内</span><span>文</span><span>本</span><span>的</span><span>水</span><span>平</span><span>对</span><span>齐</span><span>方</span><span>式</span><span>。</span><span>通</span><span>过</span><span>允</span><span>许</span><span>用</span><span>户</span><span>代</span><span>理</span><span>调</span><span>整</span><span>行</span><span>内</span><span>容</span><span>中</span><span>字</span><span>母</span><span>和</span><span>字</span><span>之</span><span>间</span><span>的</span><span>间</span><span>隔</span><span>，</span><span>可</span><span>以</span><span>支</span><span>持</span><span>值</span><span>不</span><span>同</span><span>用</span><span>户</span><span>代</span><span>理</span><span>可</span><span>能</span><span>会</span><span>得</span><span>到</span><span>不</span><span>同</span><span>的</span><span>结</span><span>果</span><span>。</span><span>该</span><span>属</span><span>性</span><span>通</span><span>过</span><span>指</span><span>定</span><span>行</span><span>框</span><span>与</span><span>哪</span><span>个</span><span>点</span><span>对</span><span>齐</span><span>，</span><span>从</span><span>而</span><span>设</span><span>置</span><span>块</span><span>级</span><span>元</span><span>素</span><span>内</span><span>文</span><span>本</span><span>的</span><span>水</span><span>平</span><span>对</span><span>齐</span><span>方</span><span>式</span><span>。</span><span>通</span><span>过</span><span>允</span><span>许</span><span>用</span><span>户</span><span>代</span><span>理</span><span>调</span><span>整</span><span>行</span><span>内</span><span>容</span><span>中</span><span>字</span><span>母</span><span>和</span><span>字</span><span>之</span><span>间</span><span>的</span><span>间</span><span>隔</span><span>，</span><span>可</span><span>以</span><span>支</span><span>持</span><span>值</span><span>不</span><span>同</span><span>用</span><span>户</span><span>代</span><span>理</span><span>可</span><span>能</span><span>会</span><span>得</span><span>到</span><span>不</span><span>同</span><span>的</span><span>结</span><span>果</span><span>。</span>
 
-<h3>whtmktopdf文本对齐不能实现</h3>	
-
+    </div>
 
     <div class="test-justify">
-        <p>「该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。」「该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。」「该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。」「该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。」「该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。」</p>
+        <p>该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值不同用户代理可能会得到不同的结果。</p>
+        <p>
+            i just curious with the result, when i used text-align:right, it can produce perfect right-side text-align, but why when i set to justify, it look like left-side text-align.i just curious with the result, when i used text-align:right, it can produce perfect
+            right-side text-align, but why when i set to justify, it look like left-side text-align.i just curious with the result, when i used text-align:right, it can produce perfect right-side text-align, but why when i set to justify, it look like
+            left-side text-align.i just curious with the result, when i used text-align:right, it can produce perfect right-side text-align, but why when i set to justify, it look like left-side text-align.i just curious with the result, when i used text-align:right,
+            it can produce perfect right-side text-align, but why when i set to justify, it look like left-side text-align.i just curious with the result, when i used text-align:right, it can produce perfect right-side text-align, but why when i set to
+            justify, it look like left-side text-align.
+
+        </p>
+
+
 
     </div>
 
 
+    <script>
+        var str = "该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值不同用户代理可能会得到不同的结果。该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值不同用户代理可能会得到不同的结果。";
 
+        var html = "123";
+        var arr = str.split("");
+        for (var i = 0; i < arr.length; i++) {
+
+            html += "<span>" + arr[i] + "</span>";
+
+        }
+        // console.log(html);
+    </script>
 
 
 </body>

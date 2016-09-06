@@ -4,7 +4,8 @@
   "description": "web-reader",
   "main": "index.html",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev":"webpack-dev-server --config webpack.dev.config.js --devtool eval --progress --colors --hot --content-base build"
   },
   "repository": {
     "type": "git",
@@ -37,7 +38,8 @@
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
   },
   "dependencies": {
     "lodash": "^4.15.0",
