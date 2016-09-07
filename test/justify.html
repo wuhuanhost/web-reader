@@ -14,6 +14,20 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+
+
+			/* wkhtmltopdf uses this one */
+			display: -webkit-box; 
+			display: -webkit-flex;
+			-webkit-flex-wrap: wrap;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+            justify-content: center;
+
+
+			-webkit-flex-direction: row;
+			-webkit-justify-content: space-between;
         }
         
         span {
@@ -21,16 +35,21 @@
         }
         
         .test-justify {
+			display:inline-block;
             width: 600px;
             height: 800px;
             font-size: 14px;
             background-color: pink;
             text-justify: inter-ideograph;
             text-align: justify;
+			text-justify:inter-ideograph;
+
+
+
         }
         
         .test-justify p {
-            text-indent: 2em;
+            text-indent: 2em;            text-align: justify;
         }
     </style>
 </head>
